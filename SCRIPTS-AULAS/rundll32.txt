@@ -1,0 +1,97 @@
+O QUE É?
+	É um executável genérico do Windows NT/2000/XP que serve para carregar DLLs
+	em memória para torna-las utilizáveis por outros programas.
+	O comando rundll32 (rundll32 significa "Run a DLL as a 32-bit application").
+
+LISTA COM ALGUMAS UTILIDADES:
+
+Informação do windows
+rundll32 shell32.dll,ShellAboutA Info-Box
+
+Painel de controle
+rundll32 shell32.dll,Control_RunDLL
+
+Propriedades de Data/Hora
+rundll32 shell32.dll,Control_RunDLL timedate.cpl @0 (0,0..1)
+	
+Propriedades de audio
+rundll32 shell32.dll,Control_RunDLL mmsys.cpl,,0 (0,1,2,3)
+
+Propriedades de video
+rundll32 shell32.dll,Control_RunDLL desk.cpl,,0 (0,1,2,3)
+
+Opções regionais de idioma
+Rundll32 Shell32.dll,Control_RunDLL Intl.cpl @0(0,0..2)
+
+Mapeamento de unidades
+rundll32 Shell32.dll,SHHelpShortcuts_RunDLL Connect
+
+Genrenciador de dispositivos
+rundll32 devmgr.dll DeviceManager_Execute
+
+Opções da barra de tarefas
+rundll32 shell32.dll,Options_RunDLL 1 (1,6)
+
+Opções de pasta: Geral
+rundll32 shell32.dll,Options_RunDLL 0(0,2,7)
+
+Opções do menu iniciar
+rundll32 shell32.dll,Options_RunDLL 3
+
+Opções de notificações do Windows
+rundll32 shell32.dll,Options_RunDLL 4 (4,5)
+
+Senhas e usuários armazenados
+rundll32 keymgr.dll, KRShowKeyMgr
+
+Assistente de adição de rede local
+rundll32 shwebsvc.dll,AddNetPlaceRunDll
+
+Localizar usuários, contatos e grupos
+rundll32 dsquery,OpenQueryWindow
+
+Bloqueia a tela
+RUNDLL32 USER32.DLL,LockWorkStation
+
+Suspende o PC
+RUNDLL32 PowrProf.dll, SetSuspendState
+
+Programas e recursos
+rundll32 shell32.dll,Control_RunDLL appwiz.cpl @0(0,0..3)
+
+Propriedades do mouse:
+rundll32 shell32.dll,Control_RunDLL main.cpl @0(0,1..4)
+
+Propriedades do teclado
+rundll32 shell32.dll,Control_RunDLL main.cpl @1 (0,0..1)
+
+Conexões de rede
+rundll32 shell32.dll,Control_RunDLL ncpa.cpl
+
+Interface de usuário da impressora
+Rundll32 Printui.dll,PrintUIEntry /?
+
+Opções de energia
+rundll32 Shell32.dll,Control_RunDLL powercfg.cpl
+
+Remover Hardware com segurança
+Rundll32 Shell32.dll,Control_RunDLL HotPlug.dll
+
+Propriedades do sistema
+Rundll32 Shell32.dll,Control_RunDLL Sysdm.cpl,,1
+
+Contas de usuário
+rundll32 shell32.dll,Control_RunDLL nusrmgr.cpl
+
+Central de segurança e manutenção
+rundll32 shell32.dll,Control_RunDLL wscui.cpl
+
+Pasta de fontes instaladas
+Rundll32 Shell32.dll,SHHelpShortcuts_RunDLL FontsFolder
+
+Windows Firewall
+rundll32 shell32.dll,Control_RunDLL firewall.cpl
+
+Configurar uma rede wifi
+rundll32 shell32.dll,Control_RunDLL NetSetup.cpl
+
