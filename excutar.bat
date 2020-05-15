@@ -22,7 +22,7 @@ set nome="!string:~%cont%,4!"
 
 if not "!string:~%cont%,1!" == "" (set /a cont+=1 & goto main)
 
-::if "string"ss
+::if "string"
 
 set /a final=%cont% - %s%
 
