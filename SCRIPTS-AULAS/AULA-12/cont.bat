@@ -14,4 +14,4 @@ if not "!string:~%cont%,1!" == "" (set /a cont+=1 & goto main)
 
 set /a final=%cont% - %s%
 
-echo N£mero de letras = %final%
+echo Nï¿½mero de letras = %final%

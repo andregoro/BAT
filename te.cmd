@@ -1,3 +1,3 @@
 @echo off
-echo testewe
+echo testewes
 pause
