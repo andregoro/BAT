@@ -12,3 +12,4 @@
 >>txt.txt dsdsd
 >>txt.txt dsds
 >>txt.txt dsdsd
+>>txt.txt numer

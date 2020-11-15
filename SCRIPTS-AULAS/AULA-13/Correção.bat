@@ -1,7 +1,6 @@
 @Echo off
 
-echo Curso ^
-Batch ^
+echo Curso ^ Batch ^
 Script
 
 set /p x=Curso <nul

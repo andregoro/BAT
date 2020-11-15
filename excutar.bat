@@ -17,13 +17,23 @@ set /a s=0
 :main
 if not defined cont (set /a cont=0)
 
-if "!string:~%cont%,1!" == " " set /a s+=1 
-set nome="!string:~%cont%,4!"
+REM if "!string:~%cont%,1!" == " " set /a s+=1
+REM set nome="!string:~%cont%,4!"
+if not "!string:~%cont%,1!" == "." (echo "erro")
+::if not "!string:~%cont%,1!" == "." (set /a cont+=1 & goto main)
+if "!string:~%cont%,4!" == ".lua" (lua %string%)
+if "!striSng:~%cont%,4!" == ".cmd" (%string%)
+::if "!string:~%cont%,1!" == "" (%string%)
+if "!string:~%cont%,4!" == ".bat" (%string%)
+if "!string:~%cont%,4!" == ".js" (nodevars
+node %string%)
+if "!string:~%cont%,4!" == ".d" (dmd %string%)
+if "!string:~%cont%,4!" == ".lisp" (clisp %string%)
+if "!string:~%cont%,4!" == ".pl" (perl %string%)
+if "!string:~%cont%,4!" == ".ts" (nodevars
+tsc %string%
+node %string%)
+if "!string:~%cont%,4!" == ".jl" (julia %string%)
 
-if not "!string:~%cont%,1!" == "" (set /a cont+=1 & goto main)
-
-::if "string"test
-
-set /a final=%cont% - %s%
-
-echo Numero de letras = %final%
+if "!string:~%cont%,4!" == ".py" (python %string%)
+if "!string:~%cont%,4!" == ".rb" (ruby %string%)

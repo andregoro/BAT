@@ -10,6 +10,8 @@ if not defined cont (set /a cont=0)
 
 if "!string:~%cont%,1!" == " " set /a s+=1
 
+if "!string:~%cont%,1!"== "." echo "!string!"
+
 if not "!string:~%cont%,1!" == "" (set /a cont+=1 & goto main)
 
 set /a final=%cont% - %s%
