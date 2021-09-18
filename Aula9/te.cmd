@@ -1,3 +1,3 @@
 @echo off
 echo teste
-pause
+pause > nul
